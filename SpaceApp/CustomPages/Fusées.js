@@ -5,7 +5,7 @@ import PostRockets from '../CustomComponents/RocketsLists';
 export default function Fusées() {
   return (
     <View style={styles.container}>
-      <PostRockets/>
+      <PostRockets style={styles.cards}/>
     </View>
   );
 }
