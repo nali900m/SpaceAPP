@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import PostRockets from '../CustomComponents/RocketsLists';
 
 export default function Fusées() {
   return (
     <View style={styles.container}>
-      <Text>Fusées</Text>
-      <StatusBar style="auto" />
+      <PostRockets/>
     </View>
   );
 }
