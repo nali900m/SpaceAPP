@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { Card } from '@rneui/themed';
 import { StyleSheet, Text, View, ActivityIndicator, FlatList, Image, ScrollView } from 'react-native';
 
 const PostRockets = () => {
@@ -28,7 +29,13 @@ const PostRockets = () => {
                 rockets.map((rocket) => {
                     return(
                         <ScrollView>
-                            <Text>{rocket.name}</Text>
+                            <Card.Title> {rocket.name} </Card.Title>
+                            <Card.Divider/>
+                            <Image
+                            style={{width:"100%",height:100}}
+                            resizeMode="contain"
+                            source={{ uri: rocket.flickr_images[0] }}
+                            />
                         </ScrollView>
                     )
                     
