@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import PostCompany from '../CustomComponents/CompanyLists';
 
 export default function Compagnies() {
   return (
     <View style={styles.container}>
-      <Text>Compagnies</Text>
       <StatusBar style="auto" />
+      <PostCompany />
     </View>
   );
 }
