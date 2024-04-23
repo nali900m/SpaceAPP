@@ -29,7 +29,8 @@ const PostCompany = () => {
 
                             <>
                             <Card.Title> {companies.name} </Card.Title>
-                            <Card.Divider/>                            
+                            <Card.Divider/>
+                            <Text>Fondateur : {companies.ceo}</Text>                          
                             </>
             )}
             </ScrollView>

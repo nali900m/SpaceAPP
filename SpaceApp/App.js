@@ -5,9 +5,20 @@ import Compagnies from './CustomPages/Compagnies';
 import Accueil from './CustomPages/Accueil';
 import Fusées from './CustomPages/Fusées';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
+const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
+
+function StackNavigator() {
+  return (
+    <Stack.Navigator initialRouteName="Acceuil">
+      <Stack.Screen name="Acceuil" component={Accueil} />
+      <Stack.Screen name="Compagnies" component={Compagnies} />
+    </Stack.Navigator>
+  );
+}
 
 export default function App() {
   return (
